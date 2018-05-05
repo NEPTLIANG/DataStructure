@@ -1,12 +1,14 @@
 #include <iostream>
 using namespace std ;
+//在志愿者亭闲来无事，写会BUG，练习一下链表操作  2018.04.21.SAT
 
-struct Node {
+struct Node {  //定义结点结构体
 	int data ;
 	Node *next ;
 } ;
 
 int input(int n , Node *p)
+//输入
 {
 	//Node *p = L ;
 	for ( int i=0 ; i<n ; i++ )
@@ -19,6 +21,7 @@ int input(int n , Node *p)
 }
 
 int output(int n , Node *p)
+//输出
 {
 	cout << "Data of the link list:" ;
 	while ( p->next )
@@ -31,6 +34,7 @@ int output(int n , Node *p)
 }
 
 int insert(int n , int a , Node *p)
+//插入结点
 {
 	for ( int i=0 ; i<a ; i++ )
 	{
